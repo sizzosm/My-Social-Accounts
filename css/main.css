@@ -4,6 +4,8 @@
 body{
     margin: 0;
     padding: 0;
+    background: rgb(15, 26, 39);
+    overflow-y: auto;
 }
 /* main background */
 #main_container{
@@ -11,8 +13,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
 }
 #main_container{
     padding: 0;
@@ -23,16 +24,42 @@ body{
     background: rgba(15, 26, 39, 0.2) linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
     height: 100vh;
 }
+/* flex container styling */
+#flex_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex_item_2{
+    margin-top: 16px;
+    margin-bottom: 0;
+    height: 55px;
+}
+.flex_item_3{
+    margin: 0;
+    padding: 0;
+}
 /* profile image */
 #profile_image{
     border-radius: 50%;
     width: 150px;
     height: 150px;
     overflow: hidden;
-    position:relative;
-    left: 50%;
-    transform: translate(-50%, 30px)
+    transform: translate(0, 30px);
 }
 #profile_image img{
     width: 150px;
+}
+#profile_image_title{
+    color: #CBD5E1;
+    font-family: 'system-ui',-apple-system,'Segoe UI','Roboto','Ubuntu','Cantarell','Noto Sans',sans-serif,'BlinkMacSystemFont','Helvetica Neue','Arial','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-weight: 1000;
+}
+#profile_image_title_description{
+    color: #CBD5E1;
+    font-family: 'system-ui',-apple-system,'Segoe UI','Roboto','Ubuntu','Cantarell','Noto Sans',sans-serif,'BlinkMacSystemFont','Helvetica Neue','Arial','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-weight: 400px;
+    text-align: center;
 }
