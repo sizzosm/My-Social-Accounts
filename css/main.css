@@ -21,6 +21,7 @@ body{
 /* cover on background */
 #bg_top_cover{
     background: rgba(15, 26, 39, 0.2) linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
+    background: rgba(15, 26, 39, 0.2) -webkit-linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
     height: 100vh;
     overflow: auto;
 }
@@ -31,13 +32,19 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    background: orchid;
+}
+
+.flex_item_1{
+    background: pink;
 }
 .flex_item_2{
+    background: red;
     margin-top: 16px;
-    margin-bottom: 0;
     height: 55px;
 }
 .flex_item_3{
+    background: orange;
     margin: 0;
     padding: 0;
 }
