@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* main background */
+#main_container{
+    background: url(../assets/background/bg_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+#main_container{
+    padding: 0;
+    margin: 0;
+}
+/* cover on background */
+#bg_top_cover{
+    background: rgba(15, 26, 39, 0.2) linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
+    height: 100vh;
+}
+/* profile image */
+#profile_image{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position:relative;
+    left: 50%;
+    transform: translate(-50%, 30px)
+}
+#profile_image img{
+    width: 150px;
+}
