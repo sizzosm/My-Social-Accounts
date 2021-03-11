@@ -12,7 +12,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100%;
 }
 #main_container{
     padding: 0;
@@ -21,15 +21,12 @@ body{
 /* cover on background */
 #bg_top_cover{
     background: rgba(15, 26, 39, 0.2) linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
-    background: rgba(15, 26, 39, 0.2) -webkit-linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
-    background: rgba(15, 26, 39, 0.2) -o-linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
-    background: rgba(15, 26, 39, 0.2) -ms-linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
     height: 100vh;
     overflow: auto;
 }
 /* flex container styling */
 #flex_container{
-    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -37,7 +34,7 @@ body{
 }
 .flex_item_2{
     margin-top: 16px;
-    height: 55px;
+    height: auto;
 }
 .flex_item_3{
     margin: 0;
@@ -58,6 +55,7 @@ body{
     color: #CBD5E1;
     font-family: 'system-ui',-apple-system,'Segoe UI','Roboto','Ubuntu','Cantarell','Noto Sans',sans-serif,'BlinkMacSystemFont','Helvetica Neue','Arial','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     font-weight: 1000;
+    margin-bottom: 0;
 }
 #profile_image_title_description{
     color: #CBD5E1;
