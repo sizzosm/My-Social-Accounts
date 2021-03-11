@@ -20,10 +20,16 @@ body{
 }
 /* cover on background */
 #bg_top_cover{
-    background: rgba(15, 26, 39, 0.2) linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
+    /*background: rgba(15, 26, 39, 0.2) linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
     background: rgba(15, 26, 39, 0.2) -webkit-linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
-    height: 100vh;
+    background: rgba(15, 26, 39, 0.2) -o-linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
+    background: rgba(15, 26, 39, 0.2) -ms-linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
+    */height: 100vh;
     overflow: auto;
+    background:linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));
+}
+@supports (background: linear-gradient(to top, rgb(15, 26, 39), rgba(15, 26, 39), rgba(15, 26, 39, 0.938) ,rgba(15, 26, 39, 0.800) ,rgba(15, 26, 39, 0.625));){
+
 }
 /* flex container styling */
 #flex_container{
