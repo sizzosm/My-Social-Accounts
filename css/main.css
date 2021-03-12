@@ -31,6 +31,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 .flex_item_2{
     margin-top: 16px;
@@ -39,6 +40,10 @@ body{
 .flex_item_3{
     margin: 0;
     padding: 0;
+}
+.flex_item_4{
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 /* profile image */
 #profile_image{
@@ -55,12 +60,120 @@ body{
     color: #CBD5E1;
     font-family: 'system-ui',-apple-system,'Segoe UI','Roboto','Ubuntu','Cantarell','Noto Sans',sans-serif,'BlinkMacSystemFont','Helvetica Neue','Arial','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     font-weight: 1000;
-    margin-bottom: 0;
     text-align: center;
+    margin-bottom: 0;
 }
 #profile_image_title_description{
     color: #CBD5E1;
     font-family: 'system-ui',-apple-system,'Segoe UI','Roboto','Ubuntu','Cantarell','Noto Sans',sans-serif,'BlinkMacSystemFont','Helvetica Neue','Arial','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     font-weight: 400px;
     text-align: center;
+}
+.wrapper ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+.wrapper ul li{
+    list-style: none;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: .5s;
+}
+.wrapper ul .fa{
+    color: white;
+    font-size: 40px;
+}
+.wrapper ul .fab{
+    color: white;
+    font-size: 40px;
+}
+.wrapper ul li:first-of-type{
+    margin: 0;
+}
+.wrapper ul li:nth-child(1){
+    border-bottom: 3px solid #fff;
+    color: #4970C2;
+    text-shadow: 0 0 6px #4970C2;
+}
+.wrapper ul li:nth-child(1):hover{
+    border-color: #4970C2;
+    color: #ffffff;
+    animation: nth1 1.5s ease-in-out infinite alternate;
+}
+.wrapper ul li:nth-child(2){
+    border-bottom: 3px solid #fff;
+    color: #e91e63;
+    text-shadow: 0 0 8px #e91e63;
+}
+.wrapper ul li:nth-child(2):hover{
+    border-color: #e91e63;
+    color: #e91e63;
+    animation: nth2 1.5s ease-in-out infinite alternate;
+}
+.wrapper ul li:nth-child(3){
+    border-bottom: 3px solid #fff;
+    color: #00acee;
+    text-shadow: 0 0 7px #00acee;
+}
+.wrapper ul li:nth-child(3):hover{
+    border-color: #00acee;
+    color: #00acee;
+    animation: nth3 1.5s ease-in-out infinite alternate;
+}
+.wrapper ul li:nth-child(4){
+    border-bottom: 3px solid #fff;
+    color: #fffc00;
+    text-shadow: 0 2px 6px #fffc00;
+}
+.wrapper ul li:nth-child(4):hover{
+    border-color: #fffc00;
+    color: #fffc00;
+    animation: nth4 1.5s ease-in-out infinite alternate;
+}
+@media only screen and (max-width: 480px){
+    .wrapper ul{
+        flex-direction: column;
+    }
+    .wrapper ul li{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .wrapper ul li:first-of-type{
+        padding-left: 7px;
+    }
+}
+@keyframes nth1{
+    from{
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4970C2, 0 0 70px #4970C2, 0 0 80px #4970C2, 0 0 100px #4970C2, 0 0 150px #4970C2;
+    }
+    to{
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #4970C2, 0 0 35px #4970C2, 0 0 40px #4970C2, 0 0 50px #4970C2, 0 0 75px #4970C2;
+    }
+}
+@keyframes nth2{
+    from{
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e91e63, 0 0 70px #e91e63, 0 0 80px #e91e63, 0 0 100px #e91e63, 0 0 150px #e91e63;
+    }
+    to{
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e91e63, 0 0 35px #e91e63, 0 0 40px #e91e63, 0 0 50px #e91e63, 0 0 75px #e91e63;
+    }
+}
+@keyframes nth3{
+    from{
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00acee, 0 0 70px #00acee, 0 0 80px #00acee, 0 0 100px #00acee, 0 0 150px #00acee;
+    }
+    to{
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00acee, 0 0 35px #00acee, 0 0 40px #00acee, 0 0 50px #00acee, 0 0 75px #00acee;
+    }
+}
+@keyframes nth4{
+    from{
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fffc00, 0 0 70px #fffc00, 0 0 80px #fffc00, 0 0 100px #fffc00, 0 0 150px #fffc00;
+    }
+    to{
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fffc00, 0 0 35px #fffc00, 0 0 40px #fffc00, 0 0 50px #fffc00, 0 0 75px #fffc00;
+    }
 }
