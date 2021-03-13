@@ -45,6 +45,14 @@ body{
     margin-top: 50px;
     margin-bottom: 20px;
 }
+.flex_item_5 h3{
+    color: #CBD5E1;
+    font-size: 9px;
+}
+.flex_item_5 h3 a{
+    color: rgb(187, 115, 255);
+    text-decoration: underline;
+}
 /* profile image */
 #profile_image{
     border-radius: 50%;
@@ -143,6 +151,9 @@ body{
     }
     .wrapper ul li:first-of-type{
         padding-left: 7px;
+    }
+    .wrapper ul li:nth-child(2){
+        padding-left: 2px;
     }
 }
 @keyframes nth1{
